@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/E-goi/EgoiPushLibrary",
       "state" : {
-        "branch" : "master",
-        "revision" : "0dc14226c1b4e9d9845c849c14e5c88d323c0d60"
+        "branch" : "dev",
+        "revision" : "713e7b77f84aa0934f9f72d4318968a5ce931d7b"
       }
     },
     {

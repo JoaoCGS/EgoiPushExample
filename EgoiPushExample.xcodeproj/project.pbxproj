@@ -585,7 +585,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/E-goi/EgoiPushLibrary";
 			requirement = {
-				branch = master;
+				branch = dev;
 				kind = branch;
 			};
 		};
