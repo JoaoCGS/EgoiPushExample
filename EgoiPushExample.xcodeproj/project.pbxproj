@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF402E4F29F152F7000079E1 /* EgoiPushExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF402E4E29F152F7000079E1 /* EgoiPushExampleApp.swift */; };
+		BF402E5129F152F7000079E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF402E5029F152F7000079E1 /* ContentView.swift */; };
+		BF402E5329F152F9000079E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF402E5229F152F9000079E1 /* Assets.xcassets */; };
+		BF402E5629F152F9000079E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF402E5529F152F9000079E1 /* Preview Assets.xcassets */; };
+		BF402E6029F1548A000079E1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BF402E5F29F1548A000079E1 /* FirebaseMessaging */; };
+		BF402E6329F154D8000079E1 /* EgoiPushLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = BF402E6229F154D8000079E1 /* EgoiPushLibrary */; };
+		BF402E6629F15514000079E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF402E6529F15514000079E1 /* AppDelegate.swift */; };
+		BF402E6929F15596000079E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF402E6829F15596000079E1 /* GoogleService-Info.plist */; };
+		BF402E7129F1570B000079E1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF402E7029F1570B000079E1 /* NotificationService.swift */; };
+		BF402E7529F1570B000079E1 /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF402E6E29F1570B000079E1 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF402E7C29F1574C000079E1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BF402E7B29F1574C000079E1 /* FirebaseMessaging */; };
+		BF402E7E29F15751000079E1 /* EgoiPushLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = BF402E7D29F15751000079E1 /* EgoiPushLibrary */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF402E7329F1570B000079E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF402E4329F152F7000079E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF402E6D29F1570B000079E1;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF402E7929F1570B000079E1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF402E7529F1570B000079E1 /* NotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF402E4B29F152F7000079E1 /* EgoiPushExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgoiPushExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF402E4E29F152F7000079E1 /* EgoiPushExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoiPushExampleApp.swift; sourceTree = "<group>"; };
+		BF402E5029F152F7000079E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF402E5229F152F9000079E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF402E5529F152F9000079E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF402E5C29F153B6000079E1 /* EgoiPushExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EgoiPushExample.entitlements; sourceTree = "<group>"; };
+		BF402E5D29F153D6000079E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BF402E6529F15514000079E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF402E6829F15596000079E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF402E6E29F1570B000079E1 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF402E7029F1570B000079E1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		BF402E7229F1570B000079E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF402E4829F152F7000079E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF402E6329F154D8000079E1 /* EgoiPushLibrary in Frameworks */,
+				BF402E6029F1548A000079E1 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF402E6B29F1570B000079E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF402E7E29F15751000079E1 /* EgoiPushLibrary in Frameworks */,
+				BF402E7C29F1574C000079E1 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF402E4229F152F7000079E1 = {
+			isa = PBXGroup;
+			children = (
+				BF402E4D29F152F7000079E1 /* EgoiPushExample */,
+				BF402E6F29F1570B000079E1 /* NotificationServiceExtension */,
+				BF402E4C29F152F7000079E1 /* Products */,
+				BF402E7A29F1574C000079E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF402E4C29F152F7000079E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E4B29F152F7000079E1 /* EgoiPushExample.app */,
+				BF402E6E29F1570B000079E1 /* NotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF402E4D29F152F7000079E1 /* EgoiPushExample */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E5C29F153B6000079E1 /* EgoiPushExample.entitlements */,
+				BF402E6829F15596000079E1 /* GoogleService-Info.plist */,
+				BF402E5D29F153D6000079E1 /* Info.plist */,
+				BF402E4E29F152F7000079E1 /* EgoiPushExampleApp.swift */,
+				BF402E5229F152F9000079E1 /* Assets.xcassets */,
+				BF402E6429F154EC000079E1 /* Delegates */,
+				BF402E5429F152F9000079E1 /* Preview Content */,
+				BF402E6729F15549000079E1 /* Views */,
+			);
+			path = EgoiPushExample;
+			sourceTree = "<group>";
+		};
+		BF402E5429F152F9000079E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E5529F152F9000079E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF402E6429F154EC000079E1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E6529F15514000079E1 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		BF402E6729F15549000079E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E5029F152F7000079E1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF402E6F29F1570B000079E1 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BF402E7029F1570B000079E1 /* NotificationService.swift */,
+				BF402E7229F1570B000079E1 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		BF402E7A29F1574C000079E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF402E4A29F152F7000079E1 /* EgoiPushExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF402E5929F152F9000079E1 /* Build configuration list for PBXNativeTarget "EgoiPushExample" */;
+			buildPhases = (
+				BF402E4729F152F7000079E1 /* Sources */,
+				BF402E4829F152F7000079E1 /* Frameworks */,
+				BF402E4929F152F7000079E1 /* Resources */,
+				BF402E7929F1570B000079E1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF402E7429F1570B000079E1 /* PBXTargetDependency */,
+			);
+			name = EgoiPushExample;
+			packageProductDependencies = (
+				BF402E5F29F1548A000079E1 /* FirebaseMessaging */,
+				BF402E6229F154D8000079E1 /* EgoiPushLibrary */,
+			);
+			productName = EgoiPushExample;
+			productReference = BF402E4B29F152F7000079E1 /* EgoiPushExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF402E6D29F1570B000079E1 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF402E7629F1570B000079E1 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				BF402E6A29F1570B000079E1 /* Sources */,
+				BF402E6B29F1570B000079E1 /* Frameworks */,
+				BF402E6C29F1570B000079E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			packageProductDependencies = (
+				BF402E7B29F1574C000079E1 /* FirebaseMessaging */,
+				BF402E7D29F15751000079E1 /* EgoiPushLibrary */,
+			);
+			productName = NotificationServiceExtension;
+			productReference = BF402E6E29F1570B000079E1 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF402E4329F152F7000079E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BF402E4A29F152F7000079E1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BF402E6D29F1570B000079E1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = BF402E4629F152F7000079E1 /* Build configuration list for PBXProject "EgoiPushExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF402E4229F152F7000079E1;
+			packageReferences = (
+				BF402E5E29F1548A000079E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF402E6129F154D8000079E1 /* XCRemoteSwiftPackageReference "EgoiPushLibrary" */,
+			);
+			productRefGroup = BF402E4C29F152F7000079E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF402E4A29F152F7000079E1 /* EgoiPushExample */,
+				BF402E6D29F1570B000079E1 /* NotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF402E4929F152F7000079E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF402E5629F152F9000079E1 /* Preview Assets.xcassets in Resources */,
+				BF402E5329F152F9000079E1 /* Assets.xcassets in Resources */,
+				BF402E6929F15596000079E1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF402E6C29F1570B000079E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF402E4729F152F7000079E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF402E6629F15514000079E1 /* AppDelegate.swift in Sources */,
+				BF402E5129F152F7000079E1 /* ContentView.swift in Sources */,
+				BF402E4F29F152F7000079E1 /* EgoiPushExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF402E6A29F1570B000079E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF402E7129F1570B000079E1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF402E7429F1570B000079E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF402E6D29F1570B000079E1 /* NotificationServiceExtension */;
+			targetProxy = BF402E7329F1570B000079E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF402E5729F152F9000079E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF402E5829F152F9000079E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF402E5A29F152F9000079E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = EgoiPushExample/EgoiPushExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EgoiPushExample/Preview Content\"";
+				DEVELOPMENT_TEAM = SBJP4UQ347;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EgoiPushExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushExample;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to display region relevant notifications.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to display region relevant notifications.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-goi.EgoiPushExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BF402E5B29F152F9000079E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = EgoiPushExample/EgoiPushExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EgoiPushExample/Preview Content\"";
+				DEVELOPMENT_TEAM = SBJP4UQ347;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EgoiPushExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushExample;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to display region relevant notifications.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to display region relevant notifications.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-goi.EgoiPushExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BF402E7729F1570B000079E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBJP4UQ347;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-goi.EgoiPushExample.NotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BF402E7829F1570B000079E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBJP4UQ347;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-goi.EgoiPushExample.NotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF402E4629F152F7000079E1 /* Build configuration list for PBXProject "EgoiPushExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF402E5729F152F9000079E1 /* Debug */,
+				BF402E5829F152F9000079E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF402E5929F152F9000079E1 /* Build configuration list for PBXNativeTarget "EgoiPushExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF402E5A29F152F9000079E1 /* Debug */,
+				BF402E5B29F152F9000079E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF402E7629F1570B000079E1 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF402E7729F1570B000079E1 /* Debug */,
+				BF402E7829F1570B000079E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF402E5E29F1548A000079E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		BF402E6129F154D8000079E1 /* XCRemoteSwiftPackageReference "EgoiPushLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/E-goi/EgoiPushLibrary";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF402E5F29F1548A000079E1 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF402E5E29F1548A000079E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		BF402E6229F154D8000079E1 /* EgoiPushLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF402E6129F154D8000079E1 /* XCRemoteSwiftPackageReference "EgoiPushLibrary" */;
+			productName = EgoiPushLibrary;
+		};
+		BF402E7B29F1574C000079E1 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF402E5E29F1548A000079E1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		BF402E7D29F15751000079E1 /* EgoiPushLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF402E6129F154D8000079E1 /* XCRemoteSwiftPackageReference "EgoiPushLibrary" */;
+			productName = EgoiPushLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BF402E4329F152F7000079E1 /* Project object */;
+}
